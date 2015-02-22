@@ -1,7 +1,12 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## ----------------------------------------------------------
+## makeCacheMatrix -
+##
+##   defines a function that takes a matrix as a parameter, 
+##   and defines access methods to the matrix and a 
+##   value of the matrix inverse, to be calculated and stored
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -29,7 +34,14 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## ----------------------------------------------------------
+## cacheSolve -
+##
+##   defines a function that takes an object defined by a
+##   makeCacheMatrix function.  computes the inverse of the 
+##   object's stored matrix value
+##
+##   assumes the matrix is square and invertible
 
 cacheSolve <- function(x, ...) {
 
